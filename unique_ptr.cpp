@@ -27,6 +27,7 @@ public:
 			return *this;
 		}
 
+		// doesn't handle pointers to arrays
 		delete ptr_;
 
 		ptr_ = other.ptr_;
@@ -46,6 +47,6 @@ public:
 };
 
 int main() {
-	std::cout << "unique pointer";
+	std::cout << "unique pointer\n";
 	return 0;
 }

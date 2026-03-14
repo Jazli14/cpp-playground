@@ -9,8 +9,8 @@ if (MSVC)
 	add_compile_options(/Zc:__cplusplus)
 endif()
 
-add_executable(unique_ptr main.cpp)
- "shared_pointer.cpp"add_executable(shared_ptr shared_ptr.cpp)
+add_executable(unique_ptr unique_ptr.cpp)
+add_executable(shared_ptr shared_ptr.cpp)
 
-target_compile_options(cppPlayground PRIVATE /W4)
-
+target_compile_options(unique_ptr PRIVATE /W4)
+target_compile_options(shared_ptr PRIVATE /W4)
